@@ -52,3 +52,8 @@ end
 def customer_cash(customers_array)
 return customers_array[:cash]
 end
+
+def remove_customer_cash(customer, amount_to_remove)
+customer[:cash] -= amount_to_remove
+return customer[:cash]
+end
