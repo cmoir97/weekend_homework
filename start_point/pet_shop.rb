@@ -76,7 +76,7 @@ end
 
 def sell_pet_to_customer(pet_shop_array, pet, customer)
 
-  if customer_can_afford_pet(customer, pet)
+  if pet != 0 && customer_can_afford_pet(customer, pet)
     add_pet_to_customer(customer, pet)
     increase_pets_sold(pet_shop_array, 1)
     remove_customer_cash(customer, pet[:price])
