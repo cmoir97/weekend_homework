@@ -29,3 +29,9 @@ def pets_by_breed(pet_shop_array, breed)
   end
   return animals_of_breed
 end
+
+def find_pet_by_name(pet_shop_array, pet_name)
+  for pet in pet_shop_array[:pets]
+    return pet if pet_name == pet[:name]
+  end
+end
