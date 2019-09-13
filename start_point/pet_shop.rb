@@ -44,3 +44,11 @@ def remove_pet_by_name(pet_shop_array, pet_name)
     end
   end
 end
+
+def add_pet_to_stock(pet_shop_array, new_pet)
+  pet_shop_array[:pets].push(new_pet)
+end
+
+def customer_cash(customers_array)
+return customers_array[:cash]
+end
